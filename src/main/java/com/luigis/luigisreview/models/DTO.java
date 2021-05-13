@@ -11,8 +11,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public abstract class DTO<T> {
 
-    private List<T> data;
-    private String responseCode;
-    private String message;
+    private List<T> data; // the data resulting from the transaction
+    private String responseCode; // the response code
+    private String message; // the message associated with the result
 
 }

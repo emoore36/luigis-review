@@ -53,6 +53,7 @@
 			<version>1.8.5</version>
 		</dependency>
 
+		<!-- Swagger Stuff -->
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-boot-starter</artifactId>

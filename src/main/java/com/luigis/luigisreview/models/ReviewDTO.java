@@ -11,10 +11,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ReviewDTO {
 
-    private List<ReviewModel> data;
+    private List<ReviewModel> data; // the data resulting from the transaction
 
-    private String responseCode;
+    private String responseCode; // the response code
 
-    private String message;
+    private String message; // the message associated with the result
 
 }

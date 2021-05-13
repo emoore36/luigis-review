@@ -26,6 +26,13 @@ public class ReviewRestController {
     @Autowired
     private ReviewBusinessInterface service;
 
+    /**
+     * Handles the (POST) publishing of a review.
+     * 
+     * @param model         the review to post
+     * @param bindingResult the data validation result
+     * @return The resulting JSON payload
+     */
     @PostMapping("/publish")
     public ResponseEntity<?> handlePublishReview(@Valid @RequestBody ReviewModel model, BindingResult bindingResult) {
 
@@ -55,6 +62,11 @@ public class ReviewRestController {
 
     }
 
+    /**
+     * Handles the (GET) retrieving of all the reviews
+     * 
+     * @return the resulting JSON payload of reviews
+     */
     @GetMapping("/")
     public ResponseEntity<?> handleGetAllReviews() {
 
